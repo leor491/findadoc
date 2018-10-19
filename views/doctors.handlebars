@@ -1,0 +1,13 @@
+<h2>Browse Doctors</h2>
+{{#if category}}<p>Found {{doctors.length}} doctor(s) in {{category}}:</p>{{/if}}
+{{#if state}}<p>Found {{doctors.length}} doctor(s) in {{state}}:</p>{{/if}}
+<ul class="docs">
+	{{#each doctors}}
+		<li>
+			<h3>{{full_name}}</h3>
+			<p>Specialty: {{category}}</p>
+			<p>Location: {{city}}, {{state}}</p>
+			<p><a href="doctor/details/{{doc_id}}">Details</a></p>
+		</li>
+	{{/each}}
+</ul>

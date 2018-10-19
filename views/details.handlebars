@@ -1,0 +1,13 @@
+<a href="/doctor">&lt; Go Back</a>
+<h2>{{doctor.full_name}}</h2>
+<h4>{{doctor.category}}</h4>
+<ul class="doc-info">
+	<li>Accepting New Patients: {{#if doctor.new_patients}}Yes{{else}}No{{/if}}</li>
+	<li>Graduation Year: {{doctor.graduation_year}}</li>
+</ul>
+<br/>
+<h4>Practice:</h4>
+<ul class="practice-info">
+	<li>Name: {{doctor.practice_name}}</li>
+	<li>Address: {{doctor.street_address}}, {{doctor.city}} {{doctor.state}}</li>
+</ul>
